@@ -1,0 +1,1 @@
+export const SET_RATING_INFO = "SET_RATING_INFO";

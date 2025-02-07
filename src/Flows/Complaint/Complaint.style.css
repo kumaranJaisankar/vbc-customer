@@ -1,0 +1,36 @@
+.starIcon{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.imghover img:hover{
+    background-color: #b8b2b2;
+    border-radius: 30px;
+}
+
+.imghover img:focus{
+    background-color: #b8b2b2;
+    border-radius: 30px;
+}
+.star{
+    color:  #ffbf00;
+    font-size: 30px;
+}
+.star-1{
+color:  #ffbf00;
+font-size: 15px;
+}
+.star-2{
+    font-size: 30px;
+}
+.star-3{
+    font-size: 15px;
+}
+.error-text{
+    color: red;
+    display: block;
+}

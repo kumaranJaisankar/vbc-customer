@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rdt_TableRow {
+  border: none !important;
+}
+
+@layer utilities {
+  .primary-button {
+    padding: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--theme-default);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    min-width: 120px;
+  }
+
+  .secondary-button {
+    padding: 4px;
+    background-color: var(--whitet);
+    color: var(--theme-default);
+    border: 1px solid var(--theme-default);
+    border-radius: 3px;
+  }
+
+  .success-card {
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #c8d0d8;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+  }
+
+  #vbc-app-OR::before,
+  #vbc-app-OR::after {
+    content: "";
+    padding-right: 100px;
+    margin: 10px;
+    position: relative;
+    bottom: 8px;
+    @apply border-b;
+    @apply border-solid;
+    @apply border-gray-500;
+  }
+
+  .success-color {
+    color: var(--success);
+  }
+
+  .danger-color {
+    color: var(--danger);
+  }
+
+  .warning-color {
+    color: var(--warning);
+  }
+
+  button.disabled {
+    @apply bg-gray-300;
+    @apply text-gray-600;
+    @apply cursor-not-allowed;
+    border: 1px solid rgba(209, 213, 219, 1);
+  }
+
+  button.link {
+    @apply underline;
+    @apply text-blue-700;
+    @apply text-sm;
+  }
+
+  :focus-visible {
+    outline: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="text"]:active {
+    outline: var(--theme-default) solid 2px;
+  }
+
+  input[type="password"]:focus,
+  input[type="password"]:active {
+    outline: var(--theme-default) solid 2px;
+  }
+
+  input[type="date"] {
+    outline: var(--card-text-dimmed) solid 1px;
+    width: 118px;
+    @apply text-sm;
+  }
+
+  input:disabled {
+    @apply bg-gray-100;
+    @apply text-gray-600;
+    @apply cursor-not-allowed;
+    border: 1px solid rgba(209, 213, 219, 1);
+    pointer-events: all !important;
+  }
+
+  .datepicker label {
+    font-weight: 400;
+    margin-right: 6px;
+    @apply text-sm;
+  }
+
+  input.invalid {
+    @apply border;
+    @apply border-red-600;
+  }
+
+  .error-text {
+    @apply text-red-600;
+    @apply text-sm;
+  }
+  a.link {
+    @apply no-underline;
+  }
+
+  a.link:hover {
+    @apply underline;
+  }
+
+  dt {
+    @apply float-left;
+    @apply clear-left;
+    @apply w-24;
+    @apply font-bold;
+  }
+
+  dd {
+    @apply float-left;
+  }
+
+  h1 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+
+  h4 {
+    @apply text-base;
+    @apply font-bold;
+  }
+
+  h5 {
+    @apply text-sm;
+    @apply font-bold;
+  }
+
+  * {
+    @apply font-sans;
+  }
+}
+
+/* ::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    45deg,
+    var(--gradient-color-start),
+    var(--gradient-color-end)
+  );
+  border: 3px solid transparent;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+} */
+
+div[aria-label="side pane"] {
+  border-top-left-radius: 20px;
+}
+
+
+  

@@ -1,0 +1,15 @@
+:root {
+  --theme-default: #3f78e9;
+  --background-gray: #f7f8fa;
+  --solid-gray: #c3c4c4;
+  --white: white;
+  --black: black;
+  --gradient-color-start: #3427ce;
+  --gradient-color-end: #f15454;
+  --card-text-dimmed: #d8d8d8;
+  --card-text-bright: white;
+  --rgba-black: rgba(0,0,0,0.25);
+  --success: #42ba96;
+  --danger: #df4759;
+  --warning: #ffc107;
+}

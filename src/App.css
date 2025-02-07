@@ -1,0 +1,184 @@
+@import url("./colors.css");
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.vbc-app-main-container {
+  display: flex;
+
+}
+
+.vbc-app-main-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-gray);
+  overflow: auto;
+}
+
+.button {
+  background-color: var(--theme-default);
+  color: var(--white);
+}
+
+/* @media only screen and (max-width: 1180px){
+  .vbc-app-main-content{
+    width: 100%;
+    padding : 0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+h1 {font-size: 200%}
+}
+
+@media only screen and (max-width: 768px){
+  h1 {font-size: 180%}
+  }
+   */
+
+
+.franchise-switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 25px;
+  background-color: darkgray;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  border-radius: 34px;
+  top: 2px;
+  left: 10px;
+}
+
+.franchise-switch.off:before,
+.franchise-switch.off:after {
+  -webkit-transition: 0.6s;
+  transition: all 0.6s;
+}
+
+.franchise-switch.on:before,
+.franchise-switch.on:after {
+  -webkit-transition: 0.6s;
+  transition: all 0.6s;
+}
+
+.franchise-switch.off:before,
+.franchise-switch.on:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 20px;
+  left: 4px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: 0.6s;
+  transition: all 0.6s;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+}
+
+.franchise-switch.off:after {
+  display: block;
+  position: absolute;
+  /* // content: ": ("; */
+  left: 17px;
+  top: 15px;
+}
+
+.franchise-switch.on:before {
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+  /* // background-color: #7366ff !important; */
+}
+
+.franchise-switch.intermediate:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+  background-color: #dc631f !important;
+}
+
+.franchise-switch.intermediate {
+  background-color: yellow !important;
+}
+
+.franchise-switch.on:after {
+  position: absolute;
+  left: 56px;
+  top: 15px;
+}
+
+.franchise-switch.on {
+  background-color: #285295;
+}
+
+.ikOCYl{
+  position: absolute;
+  margin-left: -10px;
+}
+
+.payment-gateway-options {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pcard-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pcard {
+  position: relative;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pcard img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.pcard:hover {
+  border-color: var(--theme-default);; /* Highlight color for hovered card */
+  border-width: 4px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.pcard.selected {
+  border-color:var(--theme-default);; /* Highlight color for selected card */
+  border-width: 4px;
+}
+.ptick-mark {
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  font-size: 24px;
+  color:var(--theme-default);;
+}
+.uploadimagekyc {
+  margin-top: 5px;
+  position: relative;
+  background-color: #1565c0;
+  padding: 10px 32px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
